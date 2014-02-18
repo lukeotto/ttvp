@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns   = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        id          = "nl.ttvp.competitie"
+        version     = "0.0.1" >
+
+    <!-- versionCode is optional and Android only -->
+
+    <name>TTVP competitie</name>
+
+    <description>
+       Een app van TTVP voor de standen en uitslagen van de NTTB competitie
+    </description>
+
+    <author href="http://www.ttvp.nl" email="luke@ttvp.nl">
+        Luke Otto 
+    </author>
+	<gap:platform name="winphone" />
+	<gap:platform name="android" />
+	
+	
+</widget>
