@@ -39,6 +39,6 @@
 	
 	<icon src="icon.png" />
 	
-	<access origin="http://ttvp.nl" subdomains="true" />
+	
 	
 </widget>
