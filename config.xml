@@ -41,5 +41,6 @@
 	
 	<icon src="icon.png" />
 	<access origin="*" /> <!-- allow local pages -->
+	<access origin="http://ttvp.nl" subdomains="true" />
 	
 </widget>
