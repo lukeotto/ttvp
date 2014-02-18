@@ -346,8 +346,8 @@ function change__Page(gatype,gapid,updaten){
 				});
 		
 			}else if(type=="wedstrijden"){
-				$("#btnw").html('<button style="display: none" class="npbw">Alleen Pijnacker</button><button class="npbw">Alle wedstrijden</button>');
-				$(".btnw").button();
+				
+				
 				$.getJSON("http://m.ttvp.nl/v3/poule.php?type="+type+"&pid="+pid, function() {
 				
 				})
@@ -378,8 +378,8 @@ function change__Page(gatype,gapid,updaten){
 			
 			
 			}else if(type=="percentages"){
-			$("#btnp").html('<button style="display: none" class="npbp">Alleen Pijnacker</button><button class="npbp">Alle spelers</button>');
-			$(".btnp").button();
+			
+			
 				
 				$.getJSON("http://m.ttvp.nl/v3/poule.php?type="+type+"&pid="+pid, function() {
 				
