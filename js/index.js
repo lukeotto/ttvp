@@ -189,7 +189,7 @@ function showCategory(gaanpid,gaantype){
 	
 		}else if(type=="wedstrijden"){
 			
-			$('#page_body').append('<div data-role="page" id="tikk-'+type+'-'+pid+'"><div data-role="content"><div id="btnw"><button style="display: none" class="npbw">Alleen Pijnacker</button><button class="npbw">Alle wedstrijden</button></div></br><ul id="team_'+type+'_tik_'+pid+'" data-role="listview"></ul></div></div>');
+			$('#page_body').append('<div data-role="page" id="tikk-'+type+'-'+pid+'"><div data-role="content"><div id="btnw"><button style="display: none" class="npbw">Alle wedstrijden</button><button class="npbw">Alleen Pijnacker</button></div></br><ul id="team_'+type+'_tik_'+pid+'" data-role="listview"></ul></div></div>');
 
 			$.getJSON("http://m.ttvp.nl/v3/poule.php?type="+type+"&pid="+pid, function() {
 			
