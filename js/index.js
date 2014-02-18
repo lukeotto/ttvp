@@ -179,6 +179,12 @@ function showCategory(gaanpid,gaantype){
 				});
 				
 				change__Page(type,pid,"");
+			})
+			.fail(function() {
+			alert( "Kan data niet ophalen" );
+			
+				
+			
 			});
 	
 		}else if(type=="wedstrijden"){
