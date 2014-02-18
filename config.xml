@@ -4,7 +4,7 @@
 <widget xmlns   = "http://www.w3.org/ns/widgets"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
         id          = "nl.ttvp.m"
-        version     = "0.0.1" >
+        version     = "0.0.2" >
 
     <!-- versionCode is optional and Android only -->
 
@@ -20,8 +20,7 @@
 	
 	<gap:platform name="winphone" />
 	<gap:platform name="android" />
-	<preference name="permissions"                value="none"/>
-	<icon src="icon.png" />
-	<access origin="http://m.ttvp.nl" subdomains="true" />
+	
+	
 	
 </widget>
