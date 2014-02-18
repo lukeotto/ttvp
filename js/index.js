@@ -183,7 +183,7 @@ function showCategory(gaanpid,gaantype){
 	
 		}else if(type=="wedstrijden"){
 			
-			$('#page_body').append('<div data-role="page" id="tikk-'+type+'-'+pid+'"><div data-role="content"><button style="display: none" class="npbw">Alleen Pijnacker</button><button class="npbw">Alle wedstrijden</button></br><ul id="team_'+type+'_tik_'+pid+'" data-role="listview"></ul></div></div>');
+			$('#page_body').append('<div data-role="page" id="tikk-'+type+'-'+pid+'"><div data-role="content"><div id="btnw"><button style="display: none" class="npbw">Alleen Pijnacker</button><button class="npbw">Alle wedstrijden</button></div></br><ul id="team_'+type+'_tik_'+pid+'" data-role="listview"></ul></div></div>');
 
 			$.getJSON("http://m.ttvp.nl/v3/poule.php?type="+type+"&pid="+pid, function() {
 			
@@ -216,7 +216,7 @@ function showCategory(gaanpid,gaantype){
 		
 		
 		}else if(type=="percentages"){
-			$('#page_body').append('<div data-role="page" id="tikk-'+type+'-'+pid+'"><div data-role="content"><button style="display: none" class="npbp">Alleen Pijnacker</button><button class="npbp">Alle spelers</button></br><ul id="team_'+type+'_tik_'+pid+'" data-role="listview"></ul></div></div>');
+			$('#page_body').append('<div data-role="page" id="tikk-'+type+'-'+pid+'"><div data-role="content"><div id="btnp"><button style="display: none" class="npbp">Alleen Pijnacker</button><button class="npbp">Alle spelers</button></div></br><ul id="team_'+type+'_tik_'+pid+'" data-role="listview"></ul></div></div>');
 
 			
 			$.getJSON("http://m.ttvp.nl/v3/poule.php?type="+type+"&pid="+pid, function() {
@@ -346,7 +346,7 @@ function change__Page(gatype,gapid,updaten){
 				});
 		
 			}else if(type=="wedstrijden"){
-				
+				$("#btnw").html('<button style="display: none" class="npbw">Alleen Pijnacker</button><button class="npbw">Alle wedstrijden</button>');
 
 				$.getJSON("http://m.ttvp.nl/v3/poule.php?type="+type+"&pid="+pid, function() {
 				
@@ -378,6 +378,7 @@ function change__Page(gatype,gapid,updaten){
 			
 			
 			}else if(type=="percentages"){
+			$("#btnp").html('<button style="display: none" class="npbp">Alleen Pijnacker</button><button class="npbp">Alle wedstrijden</button>');
 
 				
 				$.getJSON("http://m.ttvp.nl/v3/poule.php?type="+type+"&pid="+pid, function() {
