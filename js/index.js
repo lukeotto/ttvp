@@ -5,22 +5,7 @@
 
 var pid;
 var type;
-$( document ).on( "pagecreate", function() {
-			
-			
-	$( document ).on( "swipeleft swiperight",  function( e ) {
-		// We check if there is no open panel on the page because otherwise
-		// a swipe to close the left panel would also open the right panel (and v.v.).
-		// We do this by checking the data that the framework stores on the page element (panel: open).
-		if ( $( ".ui-page-active" ).jqmData( "panel" ) !== "open" ) {
-			 if ( e.type === "swiperight" ) {
-				$( "#menu" ).panel( "open" );
-			}
-		}
-	});
-	
-			
-});
+
 
 $( document ).on( "pageshow", function(e, data) {
 $('a').removeClass("ui-btn-active");
@@ -40,7 +25,7 @@ $( document ).on( "pagecreate","#Home", function() {
 			console.log("fav_team: "+fav_pid);		
 		}
 		$( "#fav_button" ).hide();		
-		$( "#menu" ).panel();
+		$( "#menu" ).page();
 		$( "body>[data-role='header']" ).toolbar();
 		$('#nav_menu').navbar();
 		$('#senioren').listview();
@@ -80,7 +65,6 @@ $( document ).on( "pagecreate","#Home", function() {
 		console.log("controleren of er een fav team is");
 		if (localStorage.getItem("fav_team") === null) {
 				console.log("geen fav_team");
-		$( "#menu" ).panel( "open" );
 			}else{
 			
 				var fav_pid = localStorage.getItem("fav_team");
