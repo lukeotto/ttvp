@@ -29,7 +29,7 @@
 
 	<icon src="icon.png" />
 	<activity 	android:alwaysRetainTaskState="true"
-				android:launchMode="singleTask">
+				>
 	
 	</activity>
 </widget>
