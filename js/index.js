@@ -25,7 +25,7 @@ var pid;
 var type;
 
 
-$( document ).on( "pageshow", function(e, data) {
+$( document ).on( "pagebeforeshow", function(e, data) {
 $('a').removeClass("ui-btn-active");
 $('#'+pid).addClass("ui-btn-active");
 $( "#nav_menu ul li a" ).removeClass("ui-btn-active")
