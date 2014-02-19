@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
+<widget xmlns   = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+		xmlns:android   = "http://schemas.android.com/apk/res/android"
+        id          = "nl.ttvp.competitie"
+        version     = "0.0.3" >
+
+    <!-- versionCode is optional and Android only -->
+
+    <name>TTVP competitie</name>
+
+    <description>
+       Een app van TTVP voor de standen en uitslagen van de NTTB competitie
+    </description>
+
+    <author href="http://www.ttvp.nl" email="luke@ttvp.nl">
+        Luke Otto 
+    </author>
+		
+	<gap:platform name="android" />
+
+    <!-- Customize your app and platform with the preference element. -->
+    <preference name="phonegap-version"           value="3.3.0" />          <!-- all: current version of PhoneGap -->
+
+	<icon src="icon.png" />
+	<activity 	android:alwaysRetainTaskState="true"
+				android:launchMode="singleTask">
+	
+	</activity>
+</widget>
