@@ -233,9 +233,9 @@ function showCategory(gaanpid,gaantype){
 						var uit = wedstrijd.team_uit;
 						var uit_p = uit.substr(0,3);
 						if(thuis_p=="<b>" || uit_p=="<b>"){
-							$('#team_'+type+'_tik_'+pid).append('<li data-icon="info"><a href="#wedstrijdinfo?wnr='+wedstrijd.wedstrijdnummer+'"><p>'+wedstrijd.dag+' '+wedstrijd.datum+' '+wedstrijd.maand+' '+wedstrijd.team_thuis+' - '+wedstrijd.team_uit+'</p><span class="ui-li-count">'+wedstrijd.punten_thuis+' - '+wedstrijd.punten_uit+'</span></a></li>');
+							$('#team_'+type+'_tik_'+pid).append('<li data-icon="info"><a href="#wedstrijdinfo?wnr='+wedstrijd.wedstrijdnummer+'" data-transition="pop"><p>'+wedstrijd.dag+' '+wedstrijd.datum+' '+wedstrijd.maand+' '+wedstrijd.team_thuis+' - '+wedstrijd.team_uit+'</p><span class="ui-li-count">'+wedstrijd.punten_thuis+' - '+wedstrijd.punten_uit+'</span></a></li>');
 						}else{
-							$('#team_'+type+'_tik_'+pid).append('<li class="npw" data-icon="info"><a href="#wedstrijdinfo?wnr='+wedstrijd.wedstrijdnummer+'"><p>'+wedstrijd.dag+' '+wedstrijd.datum+' '+wedstrijd.maand+' '+wedstrijd.team_thuis+' - '+wedstrijd.team_uit+'</p><span class="ui-li-count">'+wedstrijd.punten_thuis+' - '+wedstrijd.punten_uit+'</span></a></li>');
+							$('#team_'+type+'_tik_'+pid).append('<li class="npw" data-icon="info"><a href="#wedstrijdinfo?wnr='+wedstrijd.wedstrijdnummer+'" data-transition="pop"><p>'+wedstrijd.dag+' '+wedstrijd.datum+' '+wedstrijd.maand+' '+wedstrijd.team_thuis+' - '+wedstrijd.team_uit+'</p><span class="ui-li-count">'+wedstrijd.punten_thuis+' - '+wedstrijd.punten_uit+'</span></a></li>');
 
 						}
 					});
@@ -396,9 +396,9 @@ function change__Page(gatype,gapid,updaten){
 							var uit = wedstrijd.team_uit;
 							var uit_p = uit.substr(0,3);
 							if(thuis_p=="<b>" || uit_p=="<b>"){
-								$('#team_'+type+'_tik_'+pid).append('<li data-icon="info"><a href="#wedstrijdinfo?wnr='+wedstrijd.wedstrijdnummer+'"><p>'+wedstrijd.dag+' '+wedstrijd.datum+' '+wedstrijd.maand+' '+wedstrijd.team_thuis+' - '+wedstrijd.team_uit+'</p><span class="ui-li-count">'+wedstrijd.punten_thuis+' - '+wedstrijd.punten_uit+'</span></a></li>');
+								$('#team_'+type+'_tik_'+pid).append('<li data-icon="info"><a href="#wedstrijdinfo?wnr='+wedstrijd.wedstrijdnummer+'" data-transition="pop"><p>'+wedstrijd.dag+' '+wedstrijd.datum+' '+wedstrijd.maand+' '+wedstrijd.team_thuis+' - '+wedstrijd.team_uit+'</p><span class="ui-li-count">'+wedstrijd.punten_thuis+' - '+wedstrijd.punten_uit+'</span></a></li>');
 							}else{
-								$('#team_'+type+'_tik_'+pid).append('<li class="npw" data-icon="info"><a href="#wedstrijdinfo?wnr='+wedstrijd.wedstrijdnummer+'"><p>'+wedstrijd.dag+' '+wedstrijd.datum+' '+wedstrijd.maand+' '+wedstrijd.team_thuis+' - '+wedstrijd.team_uit+'</p><span class="ui-li-count">'+wedstrijd.punten_thuis+' - '+wedstrijd.punten_uit+'</span></a></li>');
+								$('#team_'+type+'_tik_'+pid).append('<li class="npw" data-icon="info"><a href="#wedstrijdinfo?wnr='+wedstrijd.wedstrijdnummer+'" data-transition="pop"><p>'+wedstrijd.dag+' '+wedstrijd.datum+' '+wedstrijd.maand+' '+wedstrijd.team_thuis+' - '+wedstrijd.team_uit+'</p><span class="ui-li-count">'+wedstrijd.punten_thuis+' - '+wedstrijd.punten_uit+'</span></a></li>');
 
 							}
 						});
