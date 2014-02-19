@@ -17,6 +17,7 @@ function onLoad() {
     function onMenuKeyDown() {
 	console.log("menukey pressed");
 	$( ":mobile-pagecontainer" ).pagecontainer( "change", "#menu",{dataUrl: "/v5/"}); 
+	alert("test");
     }
  
 //declare pid as global var
