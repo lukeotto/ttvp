@@ -1,18 +1,21 @@
 
 function onLoad() {
         document.addEventListener("deviceready", onDeviceReady, false);
+		
     }
 
     // PhoneGap is loaded and it is now safe to make calls PhoneGap methods
     //
     function onDeviceReady() {
         // Register the event listener
+		console.log("device=ready");
         document.addEventListener("menubutton", onMenuKeyDown, false);
     }
 
     // Handle the menu button
     //
     function onMenuKeyDown() {
+	console.log("menukey pressed");
 	$( ":mobile-pagecontainer" ).pagecontainer( "change", "#menu",{dataUrl: "/v5/"}); 
     }
  
