@@ -6,31 +6,24 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no">
 
 	<link rel="stylesheet" href="js/jquery.mobile-1.4.1.css" />
-	<script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+	<script src="js/jquery-2.1.0.js"></script>
 		<script>
 $(document).on("mobileinit", function(){
 $.mobile.defaultPageTransition = 'flip';
 });
 </script>
-	<script src="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.js"></script>
+	<script src="js/jquery.mobile-1.4.1.js"></script>
 	<script src="js/index.js"></script>
 	<script src="js/url.min.js"></script>
 </head>
 <body id="page_body">
 
-	<div data-role="page" id="menu" data-theme="b" data-dialog="true">
-				
-				<ul id="senioren" data-role="listview" data-theme="b" >
-				</ul>
 
-	
-
-	</div><!-- /panel -->
 	
 	
 	
 	<div data-role="header" data-theme="b" data-position="fixed">
-	<a href="#menu" class="ui-btn ui-shadow ui-corner-all ui-btn-inline ui-btn-icon-left ui-icon-bars">Menu</a>
+	<a href="#menu">Menu</a>
 		<h1>TTVP</h1>
 		<a href="#" id="fav_button" >Mijn Team</a>
 		<div data-role="navbar" id="nav_menu">
@@ -66,6 +59,16 @@ $.mobile.defaultPageTransition = 'flip';
 	</div><!-- /content -->
 
 </div><!-- /page -->
+
+
+	<div data-role="page" id="menu" data-theme="b" data-dialog="true">
+				
+				<ul id="senioren" data-role="listview" data-theme="b" >
+				</ul>
+
+	
+
+	</div><!-- /panel -->
 </body>
 
 </html>

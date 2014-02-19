@@ -72,7 +72,7 @@ $( document ).on( "pagecreate","#Home", function() {
 				if (isNaN(fav_pid)){
 					console.log("favpid is geen nummer");
 					console.log(fav_pid);
-					$( "#menu" ).panel( "open" );
+					
 				}else{
 					console.log("We gaan nu de fav pagina oproepen: "+fav_pid);
 					showCategory(fav_pid,"standen");
@@ -263,8 +263,8 @@ function change__Page(gatype,gapid,updaten){
 	$( "#nav_menu #percentages").attr("href", "#Poule?pid="+pid+"&type=percentages");
 	
 	
-	$( ":mobile-pagecontainer" ).pagecontainer( "change", "#tikk-"+gatype+"-"+ gapid,{dataUrl: "/v4/"}); 
-	$( "#menu" ).panel( "close" );
+	$( ":mobile-pagecontainer" ).pagecontainer( "change", "#tikk-"+gatype+"-"+ gapid,{dataUrl: "/v5/"}); 
+	
 	$( "#fav_button" ).show();
 	$( "#nav_menu" ).show();
 	
