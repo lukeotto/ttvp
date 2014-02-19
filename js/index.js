@@ -1,5 +1,20 @@
 
+function onLoad() {
+        document.addEventListener("deviceready", onDeviceReady, false);
+    }
 
+    // PhoneGap is loaded and it is now safe to make calls PhoneGap methods
+    //
+    function onDeviceReady() {
+        // Register the event listener
+        document.addEventListener("menubutton", onMenuKeyDown, false);
+    }
+
+    // Handle the menu button
+    //
+    function onMenuKeyDown() {
+	
+    }
  
 //declare pid as global var
 
@@ -65,6 +80,7 @@ $( document ).on( "pagecreate","#Home", function() {
 		console.log("controleren of er een fav team is");
 		if (localStorage.getItem("fav_team") === null) {
 				console.log("geen fav_team");
+				$( ":mobile-pagecontainer" ).pagecontainer( "change", "#menu",{dataUrl: "/v5/"}); 
 			}else{
 			
 				var fav_pid = localStorage.getItem("fav_team");
@@ -72,6 +88,7 @@ $( document ).on( "pagecreate","#Home", function() {
 				if (isNaN(fav_pid)){
 					console.log("favpid is geen nummer");
 					console.log(fav_pid);
+					$( ":mobile-pagecontainer" ).pagecontainer( "change", "#menu",{dataUrl: "/v5/"}); 
 					
 				}else{
 					console.log("We gaan nu de fav pagina oproepen: "+fav_pid);
