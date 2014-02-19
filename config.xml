@@ -27,7 +27,8 @@
     <preference name="phonegap-version"           value="3.3.0" />          <!-- all: current version of PhoneGap -->
 
 	<icon src="icon.png" />
-	<activity 	android:alwaysRetainTaskState="true">
+	<activity 	android:alwaysRetainTaskState="true"
+				android:launchMode="singleTask">
 	
 	</activity>
 </widget>
