@@ -13,7 +13,7 @@ function onLoad() {
     // Handle the menu button
     //
     function onMenuKeyDown() {
-	
+	$( ":mobile-pagecontainer" ).pagecontainer( "change", "#menu",{dataUrl: "/v5/"}); 
     }
  
 //declare pid as global var
