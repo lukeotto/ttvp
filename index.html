@@ -7,11 +7,11 @@
 
 	<link rel="stylesheet" href="js/jquery.mobile-1.4.1.css" />
 	<script src="js/jquery-2.1.0.js"></script>
-		<script>
-$(document).on("mobileinit", function(){
-$.mobile.defaultPageTransition = 'flip';
-});
-</script>
+	<script>
+	$(document).on("mobileinit", function(){
+	$.mobile.defaultPageTransition = 'flip';
+	});
+	</script>
 	<script src="js/jquery.mobile-1.4.1.js"></script>
 	<script src="cordova.js"></script>
 	<script src="js/index.js"></script>
@@ -19,9 +19,6 @@ $.mobile.defaultPageTransition = 'flip';
 	
 </head>
 <body id="page_body">
-
-
-	
 	
 	
 	<div data-role="header" data-theme="b" data-position="fixed">
@@ -37,40 +34,30 @@ $.mobile.defaultPageTransition = 'flip';
 		</div><!-- /navbar -->
 	</div><!-- /header -->
 
-<div data-role="page" id="Home">
+	<div data-role="page" id="Home">
 
 
-	<div role="main" class="ui-content">
-		<p>Welkom</p>
+		<div role="main" class="ui-content">
+			<p>Welkom</p>
 
-	</div><!-- /content -->
+		</div><!-- /content -->
 
-</div><!-- /page -->
+	</div><!-- /page -->
 
-<div data-role="page" id="Poule">
-	
-	
-	
-	
+	<div data-role="page" id="Poule">
 
+		<div role="main" class="ui-content">
+		</div><!-- /content -->
 
-	<div role="main" class="ui-content">
-		<p>Page content goes here.</p>
-		
-		<ul id="team_standen" data-role="listview"></ul>
-	</div><!-- /content -->
-
-</div><!-- /page -->
+	</div><!-- /page -->
 
 
 	<div data-role="page" id="menu" data-theme="b" data-dialog="true">
 				
-				<ul id="senioren" data-role="listview" data-theme="b" >
-				</ul>
+		<ul id="senioren" data-role="listview" data-theme="b" >
+		</ul>
 
-	
-
-	</div><!-- /panel -->
+		</div><!-- /panel -->
 </body>
 
 </html>

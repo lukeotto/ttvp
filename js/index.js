@@ -43,7 +43,7 @@ $( document ).on( "pagecreate","#Home", function() {
 			console.log("fav_team: "+fav_pid);		
 		}
 		$( "#fav_button" ).hide();		
-		$( "#menu" ).page();
+		
 		$( "body>[data-role='header']" ).toolbar();
 		$('#nav_menu').navbar();
 		$('#senioren').listview();
