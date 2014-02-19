@@ -34,6 +34,33 @@ $( "#nav_menu #"+type).addClass("ui-btn-active")
 });
 
 
+
+$( document ).on( "pageshow","#Home", function(e, data) {
+		console.log("controleren of er een fav team is");
+		if (localStorage.getItem("fav_team") === null) {
+				console.log("geen fav_team");
+				$( ":mobile-pagecontainer" ).pagecontainer( "change", "#menu",{dataUrl: "/v5/"}); 
+			}else{
+			
+				var fav_pid = localStorage.getItem("fav_team");
+				
+				if (isNaN(fav_pid)){
+					console.log("favpid is geen nummer");
+					console.log(fav_pid);
+					$( ":mobile-pagecontainer" ).pagecontainer( "change", "#menu",{dataUrl: "/v5/"}); 
+					
+				}else{
+					console.log("We gaan nu de fav pagina oproepen: "+fav_pid);
+					showCategory(fav_pid,"standen");
+					$( "#senioren li" ).attr("data-icon","false");
+					$( "#panel-"+pid ).attr("data-icon","star");
+				}
+			}
+
+});
+
+
+
 $( document ).on( "pagecreate","#Home", function() {	
 		if (localStorage.getItem("fav_team") === null) {
 			console.log("geen fav_team");
@@ -80,26 +107,7 @@ $( document ).on( "pagecreate","#Home", function() {
 		
 		
 		console.log("klaar met teamlijst");
-		console.log("controleren of er een fav team is");
-		if (localStorage.getItem("fav_team") === null) {
-				console.log("geen fav_team");
-				$( ":mobile-pagecontainer" ).pagecontainer( "change", "#menu",{dataUrl: "/v5/"}); 
-			}else{
-			
-				var fav_pid = localStorage.getItem("fav_team");
-				
-				if (isNaN(fav_pid)){
-					console.log("favpid is geen nummer");
-					console.log(fav_pid);
-					$( ":mobile-pagecontainer" ).pagecontainer( "change", "#menu",{dataUrl: "/v5/"}); 
-					
-				}else{
-					console.log("We gaan nu de fav pagina oproepen: "+fav_pid);
-					showCategory(fav_pid,"standen");
-					$( "#senioren li" ).attr("data-icon","false");
-					$( "#panel-"+pid ).attr("data-icon","star");
-				}
-			}	
+	
 		$('#senioren').listview("refresh");
 		
 		});
