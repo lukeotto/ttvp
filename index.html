@@ -53,17 +53,24 @@
 
 
 	<div data-role="page" id="menu" data-theme="a" data-dialog="true" data-close-btn="none">
-	<div data-role="header" data-theme="b" >
-		<h1>Kies uw team</h1>
+		<div data-role="header" data-theme="b" >
+			<h1>Kies uw team</h1>
 		</div>
+		<div role="main" class="ui-content" >
+			<ul id="senioren" data-role="listview" data-theme="a" >
+			</ul>
+		</div><!-- /content -->
+	</div><!-- /page -->
 	
-	<div role="main" class="ui-content" >
-		
+	<div data-role="page" id="wedstrijdinfo" data-theme="a" data-dialog="true" data-close-btn="right">
+		<div data-role="header" data-theme="b" >
+			<h1>Wedstrijd info</h1>
+		</div>
+		<div role="main" class="ui-content"  >
+			<p id="div_wedstrijdinfo"></p>
+		</div><!-- /content -->
+	</div><!-- /page -->
 	
-		<ul id="senioren" data-role="listview" data-theme="a" >
-		</ul>
-</div><!-- /content -->
-		</div><!-- /panel -->
 </body>
 
 </html>
